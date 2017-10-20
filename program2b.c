@@ -9,15 +9,18 @@ int dodaj(int a, int b)
 	return a+b;
 }
 
-int main(void)
-/* moze byc w main(void) czyli main bez parametrow */
+int main(void)						/* moze byc w main(void) czyli main bez parametrow */
 {
 	int a = 2, b = 5; 				/* deklaracja  wraz z inicjalizacja */
 	char wybor = '+';
+
+	printf("mnożenie podaj * :   ");
+	scanf("%c", &wybor);			/*czytaj z konsoli i zapisz wartosc pod wybor */	
+
 	/* if(wyrazenie) {blok jezeli wyrazenie prawdziwe} */
-	if(wybor == '*')  	/* sprawdzenie  czy rowne */
+	if(wybor == '*')  				/* sprawdzenie  czy rowne */
 	{
-		printf("Wynik mnozenia: %i\n" , mnoz(a, b));
+	printf("Wynik mnozenia: %i\n" , mnoz(a, b));
 	}
 	else
 	{ 
