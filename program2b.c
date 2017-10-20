@@ -12,10 +12,10 @@ int dodaj(int a, int b)
 int main(void)
 /* moze byc w main(void) czyli main bez parametrow */
 {
-	int a = 2, b = 5; 			/* deklaracja  wraz z inicjalizacja */
-	char wybor = '*';
+	int a = 2, b = 5; 				/* deklaracja  wraz z inicjalizacja */
+	char wybor = '+';
 	/* if(wyrazenie) {blok jezeli wyrazenie prawdziwe} */
-	if(wybor == '*') 
+	if(wybor == '*')  	/* sprawdzenie  czy rowne */
 	{
 		printf("Wynik mnozenia: %i\n" , mnoz(a, b));
 	}
@@ -23,7 +23,7 @@ int main(void)
 	{ 
 	printf("Wynik dodawania: %i\n" , dodaj(a, b));	/*wyświetla informacje z wynikiem */
 							/* \n przechodzi do nastepnej lini */
-	}
+	}; 						/* ten srednik jest opcjonalny */
 	return 0;
 
 }
